@@ -16,7 +16,7 @@ from models import Product
 from schemas import many_product_schema
 
 migrate = Migrate(app, db)
-@app.route('/hello', methods=['GET'])
+@app.route('/', methods=['GET'])
 def hello():
     return "Hello World!", 200
 
